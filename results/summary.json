@@ -1,0 +1,13 @@
+{
+  "backbone": "dinov2_large",
+  "img_size": 518,
+  "epochs": 25,
+  "test_top1": 0.87,
+  "test_top5": 0.9675,
+  "trainable_params_M": 5.863511,
+  "total_params_M": 310.232151,
+  "tta_top1": 0.87,
+  "ece_before": 0.1282695577293634,
+  "ece_after": 0.04657268714159729,
+  "temperature": 0.738303542137146
+}

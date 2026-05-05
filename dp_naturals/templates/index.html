@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DP Naturals — Indian Food Recognizer</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+  <header class="hero">
+    <div class="brand">
+      <span class="logo">●</span>
+      <h1>DP Naturals</h1>
+    </div>
+    <p class="tagline">Snap an Indian dish — get nutrition &amp; allergen badges in seconds.</p>
+    <div class="accuracy-banner" title="Headline test top-1 accuracy">
+      <span class="accuracy-value">{{ advertised_accuracy }}%</span>
+      <span class="accuracy-label">Model Accuracy</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="upload-card" id="uploadCard">
+      <label for="fileInput" class="dropzone" id="dropzone">
+        <div class="dz-inner">
+          <div class="dz-icon">⬆</div>
+          <div class="dz-title">Upload a dish photo</div>
+          <div class="dz-sub">Click here or drag &amp; drop · JPG / PNG / WebP</div>
+        </div>
+        <input type="file" id="fileInput" accept="image/*" hidden />
+      </label>
+
+      <div class="preview" id="preview" hidden>
+        <img id="previewImg" alt="preview" />
+        <div class="preview-actions">
+          <button id="analyzeBtn" class="btn-primary">Analyze</button>
+          <button id="resetBtn" class="btn-ghost">Choose another</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="status" id="status" hidden></section>
+
+    <section class="result" id="result" hidden>
+      <div class="result-header">
+        <img id="resultImg" alt="dish" />
+        <div class="result-headline">
+          <div class="badge-pill" id="ourPredictionPill">Top prediction</div>
+          <h2 id="dishName">—</h2>
+          <div class="confidence">
+            <div class="conf-track"><div class="conf-fill" id="confFill"></div></div>
+            <span id="confValue">—</span>
+          </div>
+          <div class="meta-row" id="metaRow"></div>
+        </div>
+      </div>
+
+      <div class="grid two-col">
+        <div class="panel">
+          <h3>Nutrition <span class="muted">(per 100 g)</span></h3>
+          <div class="nutrition-grid" id="nutritionGrid"></div>
+          <p class="muted small" id="nutritionProvenance"></p>
+        </div>
+
+        <div class="panel">
+          <h3>Allergen Badges</h3>
+          <div class="allergen-list" id="allergenList"></div>
+          <div class="legend">
+            <span class="legend-item"><span class="dot dot-red"></span>Contains</span>
+            <span class="legend-item"><span class="dot dot-yellow"></span>May contain</span>
+            <span class="legend-item"><span class="dot dot-green"></span>Safe</span>
+          </div>
+        </div>
+      </div>
+
+      <details class="topk">
+        <summary>Other top guesses</summary>
+        <ul id="topkList"></ul>
+      </details>
+    </section>
+  </main>
+
+  <footer>
+    <span>Local demo · model weights stay on your machine</span>
+    <span class="footer-accuracy">Accuracy <strong>{{ advertised_accuracy }}%</strong></span>
+  </footer>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

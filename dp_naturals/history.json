@@ -1,0 +1,79 @@
+[
+  {
+    "image_url": "/uploads/b0f177ec611d4641953ebea150157d89.jpeg",
+    "top": {
+      "class": "mysore_pak",
+      "label": "Mysore Pak",
+      "confidence": 0.8457552194595337
+    },
+    "msp": 0.8457552194595337,
+    "is_ood": false,
+    "timestamp": 1778021357
+  },
+  {
+    "image_url": "/uploads/2c7c9807c6284cb8ac45daa2c65fe794.png",
+    "top": {
+      "class": "dal_tadka",
+      "label": "Dal Tadka",
+      "confidence": 0.7687258720397949
+    },
+    "msp": 0.7687258720397949,
+    "is_ood": false,
+    "timestamp": 1778021088
+  },
+  {
+    "image_url": "/uploads/77ebd85e024e4e43a16c24ae369c4b2f.jpeg",
+    "top": {
+      "class": "paneer_butter_masala",
+      "label": "Paneer Butter Masala",
+      "confidence": 0.6038448810577393
+    },
+    "msp": 0.6038448810577393,
+    "is_ood": false,
+    "timestamp": 1778021033
+  },
+  {
+    "image_url": "/uploads/613a44371fc1498fb7b0bc631f22ad75.jpeg",
+    "top": {
+      "class": "chapati",
+      "label": "Chapati",
+      "confidence": 0.7699095606803894
+    },
+    "msp": 0.7699095606803894,
+    "is_ood": false,
+    "timestamp": 1778020970
+  },
+  {
+    "image_url": "/uploads/de2b7bea6dd64be4aea31a1a868484ad.jpeg",
+    "top": {
+      "class": "adhirasam",
+      "label": "Adhirasam",
+      "confidence": 0.26332607865333557
+    },
+    "msp": 0.26332607865333557,
+    "is_ood": true,
+    "timestamp": 1778020931
+  },
+  {
+    "image_url": "/uploads/edd9faf2ce0748149fe0643b17940411.jpeg",
+    "top": {
+      "class": "dum_aloo",
+      "label": "Dum Aloo",
+      "confidence": 0.3328704833984375
+    },
+    "msp": 0.3328704833984375,
+    "is_ood": false,
+    "timestamp": 1778020715
+  },
+  {
+    "image_url": "/uploads/ec4d7c77e6a74578baa617e3abcf958a.jpg",
+    "top": {
+      "class": "aloo_matar",
+      "label": "Aloo Matar",
+      "confidence": 0.48944661021232605
+    },
+    "msp": 0.48944661021232605,
+    "is_ood": false,
+    "timestamp": 1778020560
+  }
+]

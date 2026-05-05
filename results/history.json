@@ -1,0 +1,1 @@
+{"train_loss": [], "val_top1": [], "stopped_epoch": 20, "best_val_top1": 0.8625}
