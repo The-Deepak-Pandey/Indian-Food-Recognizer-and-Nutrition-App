@@ -7,7 +7,7 @@ End-to-end Indian-dish recognition pipeline with a local Flask UI. Trained DINOv
 ## Folder structure
 
 ```
-assignment3/
+home/
 ├── README.md                          ← this file
 ├── dp_final.ipynb                     ← end-to-end training/eval notebook
 │
