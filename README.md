@@ -6,6 +6,8 @@ End-to-end Indian-dish recognition pipeline with a local Flask UI. Trained DINOv
 
 ## Folder structure
 
+Below is the folder structure specifically for the final working model - few files are not in the repository, due to limitation issues, but this is how the final architecture and implementation of it with a Flask app looks like -
+
 ```
 home/
 ├── README.md                          ← this file
