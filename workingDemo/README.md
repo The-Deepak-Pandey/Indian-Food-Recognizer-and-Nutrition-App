@@ -1,0 +1,1 @@
+The attached image displays how the app looks like. It also shows the results we got from uploading some food items (the food images were taken from our college mess).
