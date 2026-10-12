@@ -90,6 +90,7 @@ DP_DEVICE=cpu python3 app.py     # CPU is safer on small/shared GPUs
 
 ---
 
+
 ## Model summary
 
 | Field | Value |
